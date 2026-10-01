@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  }
+}
+
+/* Custom Luxury Typography */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Gold Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF9E6 0%, #F5CE62 30%, #D4AF37 60%, #AA771C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Platinum & Titanium Silver Gradient Text */
+.platinum-gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 40%, #94A3B8 75%, #64748B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Panels (Luxury Obsidian & Titanium Gray) */
+.glass-panel {
+  background: rgba(13, 16, 23, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel-gold {
+  background: linear-gradient(145deg, rgba(26, 22, 16, 0.85) 0%, rgba(14, 15, 18, 0.9) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 15px 35px -10px rgba(212, 175, 55, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-gray {
+  background: linear-gradient(145deg, rgba(24, 28, 36, 0.85) 0%, rgba(13, 15, 20, 0.9) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(203, 213, 225, 0.18);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+}
+
+/* 3D Realistic Glossy Lotto Balls (Vibrant & Colorful Luxury Palette) */
+.lotto-ball {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 800;
+  user-select: none;
+  box-shadow: inset 0 -4px 6px rgba(0, 0, 0, 0.45), 
+              inset 0 3px 5px rgba(255, 255, 255, 0.75), 
+              0 5px 12px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.lotto-ball:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* 1 ~ 10: ☀️ Vivid Golden Sunshine */
+.lotto-ball-range-1 {
+  background: radial-gradient(circle at 35% 28%, #FFFDE7 0%, #FFD54F 40%, #FFA000 75%, #E65100 100%);
+  color: #1a1300;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+/* 11 ~ 20: 💎 Sapphire Ocean Blue */
+.lotto-ball-range-2 {
+  background: radial-gradient(circle at 35% 28%, #E1F5FE 0%, #29B6F6 40%, #0288D1 75%, #01579B 100%);
+  color: #FFFFFF;
+}
+
+/* 21 ~ 30: 🍓 Ruby Flame Red */
+.lotto-ball-range-3 {
+  background: radial-gradient(circle at 35% 28%, #FFEBEE 0%, #EF5350 40%, #E53935 75%, #B71C1C 100%);
+  color: #FFFFFF;
+}
+
+/* 31 ~ 40: 🔮 Amethyst Royal Purple / Slate */
+.lotto-ball-range-4 {
+  background: radial-gradient(circle at 35% 28%, #F3E5F5 0%, #AB47BC 40%, #7B1FA2 75%, #4A148C 100%);
+  color: #FFFFFF;
+}
+
+/* 41 ~ 45: 🍀 Emerald Lucky Green */
+.lotto-ball-range-5 {
+  background: radial-gradient(circle at 35% 28%, #E8F5E9 0%, #66BB6A 40%, #388E3C 75%, #1B5E20 100%);
+  color: #FFFFFF;
+}
+
+/* Pure 24K Gold Ball */
+.lotto-ball-pure-gold {
+  background: radial-gradient(circle at 32% 25%, #FFFCE6 0%, #F5CE62 35%, #D4AF37 70%, #8C6A0A 100%);
+  color: #1a1200;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 -4px 6px rgba(0, 0, 0, 0.5), 
+              inset 0 3px 6px rgba(255, 255, 255, 0.8), 
+              0 0 18px rgba(245, 206, 98, 0.5),
+              0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Bonus Ball Crown Glow */
+.lotto-ball-bonus {
+  box-shadow: 0 0 20px rgba(245, 206, 98, 0.9), inset 0 2px 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Rotary Machine Glass Chamber */
+.chamber-globe {
+  background: radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.04) 40%, rgba(15, 23, 42, 0.6) 80%, rgba(5, 8, 15, 0.95) 100%);
+  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.12),
+              inset 0 -15px 30px rgba(0, 0, 0, 0.8),
+              0 15px 35px rgba(0, 0, 0, 0.7),
+              0 0 30px rgba(212, 175, 55, 0.15);
+  border: 2px solid rgba(212, 175, 55, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Gold Shimmer Animation */
+@keyframes gold-shine {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shine-effect {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background-size: 200% 100%;
+  animation: gold-shine 3s infinite linear;
+}
